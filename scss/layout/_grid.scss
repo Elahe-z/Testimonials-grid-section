@@ -1,0 +1,62 @@
+$color-deniel: hsl(263, 55%, 52%);
+$color-jonathan: hsl(217, 19%, 35%);
+$color-jeanette: hsl(0, 0%, 100%);
+$color-patrick: hsl(219, 29%, 14%);
+$color-kira: hsl(0, 0%, 100%);
+
+.grid{
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 35px;
+    max-width: 1300px;
+    margin-top: 100px;
+    margin-inline: auto auto;
+    grid-template-areas: 
+    'd d d d d d a a a c c c'
+    'b s s s s s s s s c c c'
+    ;
+
+    @media (max-width: 899px) and (min-width:375px) {
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+        'd'
+        'a'
+        'b'
+        's'
+        'c';
+}
+}
+
+@mixin card-style($bg-color) {
+    background-color: $bg-color;
+    border-radius: 2%;
+    padding: 40px;
+    box-shadow:  -4px 11px 16px 1px rgba(104,80,80,0.75);
+}
+
+.Deniel {
+    grid-area: d;
+    @include card-style($color-deniel);
+}
+
+.Jonathan {
+    grid-area: a;
+    @include card-style($color-jonathan);
+}
+
+.Jeanette {
+    grid-area: b;
+    @include card-style($color-jeanette);
+}
+
+.Patrick {
+    grid-area: s;
+    @include card-style($color-patrick);
+}
+
+.Kira {
+    grid-area: c;
+    @include card-style($color-kira);
+}
+

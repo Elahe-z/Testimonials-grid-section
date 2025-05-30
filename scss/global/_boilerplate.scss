@@ -1,0 +1,72 @@
+@import url("https://fonts.google.com/specimen/Barlow+Semi+Condensed");
+html{
+    background-color: var(--background-color) ;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family:"Barlow Semi Condensed", sans-serif ;
+    color:var(--text-color) ;
+    margin: 0px;
+}
+.name{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+picture {
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+
+}
+
+.jpg {
+      max-width: 40px;
+      max-height: 40px;
+      border-radius: 50%;
+      border: 2px solid var(--border) ;
+    }
+  }
+.black,
+.black>p,
+.black>.name{
+    color: var(--black);
+  }
+
+@media (min-width: 900px){
+.link{
+    position: absolute;
+    left: 450px;
+    color: var(--black);
+    margin-top: 50px;
+    font-size: 15px;
+}
+}
+@media(max-width:899px){
+    .link{
+    color: var(--black);
+    margin-top: 50px;
+    font-size: 15px;
+    }
+}
+
+
+.bg-image{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: -40px;
+    right: 40px;
+    opacity: 0.6;
+
+}
+
+
+
+
+   
